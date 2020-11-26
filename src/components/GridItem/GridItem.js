@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import { makeStyles } from '@material-ui/core/styles';
-import { Container, Grid, Paper } from '@material-ui/core';
+import { makeStyles } from "@material-ui/core/styles";
+import { Container, Grid, Paper } from "@material-ui/core";
 
-import stock1 from '../../images/stock1.jpg';
+import stock1 from "../../images/stock1.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,29 +17,34 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
   },
   mainImage: {
-    maxWidth: '100%',
-    maxHeight: '100%',
+    maxWidth: "100%",
+    maxHeight: "100%",
   },
   imageOverlay: {
-    filter: 'gray',
-    webkitFilter: 'grayscale(1)',
-    filter: 'grayscale(1)',
-    '&:hover': {
-      webkitFilter: 'grayscale(0)',
-      filter: 'none',
+    filter: "gray",
+    webkitFilter: "grayscale(1)",
+    filter: "grayscale(1)",
+    "&:hover": {
+      webkitFilter: "grayscale(0)",
+      filter: "none",
     },
   },
 }));
 
-const GridItem = ({ user }) => {
+const GridItem = ({ student, index }) => {
   const classes = useStyles();
-  // return <Paper className={classes.paper}></Paper>;
+  console.log(index, "i");
   return (
     <Fragment>
-      <div className={classes.imageOverlay}>
-        <img src={stock1} className={(classes.mainImage, classes.paper)}></img>
-        <p>{user.name}</p>
-      </div>
+      {index === 2 && <h1>{student.project.title}</h1>}
+      {index !== 2 && (
+        <div className={classes.imageOverlay}>
+          <img
+            src={stock1}
+            className={(classes.mainImage, classes.paper)}
+          ></img>
+        </div>
+      )}
     </Fragment>
   );
 };
