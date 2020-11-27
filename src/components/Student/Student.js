@@ -28,7 +28,6 @@ const Student = () => {
   const [student, setStudent] = useState(
     data.filter((student) => student.name.replace(" ", "") === studentName)
   );
-  console.log(student, "student");
 
   return (
     <Fragment>

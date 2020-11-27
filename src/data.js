@@ -20,7 +20,7 @@ export const data = [
   {
     name: "Tom Tommy2345",
     semester: "2",
-    studentImage: "tom_tommy_profile.jpg",
+    studentImage: "stock2.jpg",
     project: {
       title: "Project Title",
       description:
@@ -44,7 +44,7 @@ export const data = [
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus ut omnis quibusdam exercitationem, ullam vitae. Animi, facilis, totam ut similique molestias officia asperiores accusantium voluptas praesentium, ipsam placeat tempore?",
       files: {
-        file1: "tom_tommy1.jpg",
+        file1: "stock2.jpg",
         file2: "tom_tommy_2.jpg",
         file1: "tom_tommy1.jpg",
         file2: "tom_tommy_2.jpg",
@@ -74,13 +74,13 @@ export const data = [
   {
     name: "Lula Tommy",
     semester: "5",
-    studentImage: "tom_tommy_profile.jpg",
+    studentImage: "stock2.jpg",
     project: {
       title: "Project Title",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus ut omnis quibusdam exercitationem, ullam vitae. Animi, facilis, totam ut similique molestias officia asperiores accusantium voluptas praesentium, ipsam placeat tempore?",
       files: {
-        file1: "tom_tommy1.jpg",
+        file1: ".jpg",
         file2: "tom_tommy_2.jpg",
         file1: "tom_tommy1.jpg",
         file2: "tom_tommy_2.jpg",
@@ -152,7 +152,7 @@ export const data = [
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus ut omnis quibusdam exercitationem, ullam vitae. Animi, facilis, totam ut similique molestias officia asperiores accusantium voluptas praesentium, ipsam placeat tempore?",
       files: {
-        file1: "tom_tommy1.jpg",
+        file1: "stock2.jpg",
         file2: "tom_tommy_2.jpg",
         file1: "tom_tommy1.jpg",
         file2: "tom_tommy_2.jpg",
@@ -188,7 +188,7 @@ export const data = [
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus ut omnis quibusdam exercitationem, ullam vitae. Animi, facilis, totam ut similique molestias officia asperiores accusantium voluptas praesentium, ipsam placeat tempore?",
       files: {
-        file1: "tom_tommy1.jpg",
+        file1: "stock2.jpg",
         file2: "tom_tommy_2.jpg",
         file1: "tom_tommy1.jpg",
         file2: "tom_tommy_2.jpg",
@@ -206,7 +206,7 @@ export const data = [
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus ut omnis quibusdam exercitationem, ullam vitae. Animi, facilis, totam ut similique molestias officia asperiores accusantium voluptas praesentium, ipsam placeat tempore?",
       files: {
-        file1: "tom_tommy1.jpg",
+        file1: "stock2.jpg",
         file2: "tom_tommy_2.jpg",
         file1: "tom_tommy1.jpg",
         file2: "tom_tommy_2.jpg",

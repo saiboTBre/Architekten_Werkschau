@@ -5,9 +5,11 @@ import stock1 from "../../images/stock1.jpg";
 import {
   BrowserRouter as Router,
   Switch,
+  Redirect,
   Route,
   Link,
   useLocation,
+  NavLink,
 } from "react-router-dom";
 
 import Rooms from "../Rooms";
@@ -83,17 +85,11 @@ const useStyles = makeStyles({
 const Main = () => {
   const classes = useStyles();
   const location = useLocation();
-  console.log(location.pathname, "location");
-
-  const compareLocation = (loc) => {
-    return loc === location.pathname;
-  };
-
   return (
     <Container className={classes.mainLayout}>
       <Switch>
-        <Route path="/rooms/student/:studentName">
-          <Student />
+        <Route path="/shuffle">
+          <Shuffle />
         </Route>
         <Route path="/rooms/:roomname">
           <Room />
@@ -104,12 +100,10 @@ const Main = () => {
         <Route path="/student/:studentName">
           <Student />
         </Route>
-        <Route path="/shuffle">
-          <Shuffle />
-        </Route>
         <Route exact path="/">
           <Start />
         </Route>
+        <Redirect to="/" />
       </Switch>
       <BottomNavigation showLabels>
         <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
@@ -117,13 +111,13 @@ const Main = () => {
           <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
         </Link>
         <Button className={classes.btnStyle}>
-          <Link to="shuffle">Browse</Link>
+          <Link to="/shuffle">Browse</Link>
         </Button>
         <Button className={classes.btnStyle}>Mikrofon: an</Button>
         <Button className={classes.btnStyle}>Kamera: an</Button>
 
         <Button className={classes.btnStyle}>
-          <Link to="rooms" className={classes.linkStyle}>
+          <Link to="/rooms" className={classes.linkStyle}>
             Werkschau starten
           </Link>
         </Button>

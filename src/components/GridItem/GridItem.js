@@ -33,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
 
 const GridItem = ({ student, index }) => {
   const classes = useStyles();
-  console.log(index, "i");
   return (
     <Fragment>
       {index === 2 && <h1>{student.project.title}</h1>}

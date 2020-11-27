@@ -37,7 +37,7 @@ const StudentItem = ({ student }) => {
   };
   return (
     <Fragment>
-      <Link to={`student/${student.name.replace(" ", "")}`}>
+      <Link to={`/student/${student.name.replace(" ", "")}`}>
         <div className={classes.imageOverlay}>
           <img
             src={getFile(student.studentImage).default}

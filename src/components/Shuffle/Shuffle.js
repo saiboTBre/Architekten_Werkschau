@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
 const Shuffle = () => {
   const classes = useStyles();
   let a = data.filter((student, i) => i === 0);
-  console.log(a);
 
   const getRandomInt = (max) => {
     return Math.floor(Math.random() * Math.floor(max));
@@ -33,7 +32,6 @@ const Shuffle = () => {
   while (randomStudents.size < 6) {
     randomStudents.add(getRandomInt(data.length));
   }
-  console.log(randomStudents);
 
   return (
     <Fragment>
